@@ -4,18 +4,39 @@ REM This script uses PyInstaller to bundle sysdoc/main.py with all dependencies
 
 setlocal enabledelayedexpansion
 
+if /I "%~1"=="x86" (
+    set "VENV=.venv32"
+    set "EXE_NAME=Fixbot_x86"
+    set "DIST=dist32"
+    set "BUILD=build32"
+) else (
+    set "VENV=.venv"
+    set "EXE_NAME=Fixbot"
+    set "DIST=dist"
+    set "BUILD=build"
+)
+
 REM Activate virtual environment
-call .venv\Scripts\activate.bat
+if not exist "%VENV%\Scripts\activate.bat" (
+    echo [!] Virtual environment "%VENV%" not found.
+    echo [!] Create it first or pass the other build target.
+    exit /b 1
+)
+call "%VENV%\Scripts\activate.bat"
 
 echo [*] Ensuring PyInstaller is installed...
 python -m pip install pyinstaller --quiet
 
-echo [*] Building Fixbot.exe...
+echo [*] Installing runtime requirements...
+python -m pip install -r sysdoc\requirements.txt --quiet
+
+echo [*] Building %EXE_NAME%...
 echo.
 
 REM Main PyInstaller command with all required flags
 python -m PyInstaller ^
-  --name=Fixbot ^
+  --clean ^
+  --name=%EXE_NAME% ^
   --onefile ^
   --console ^
   --add-data="sysdoc\.env;sysdoc" ^
@@ -25,6 +46,9 @@ python -m PyInstaller ^
   --add-data="sysdoc\gitpilot;sysdoc\gitpilot" ^
   --add-data="sysdoc\modules;sysdoc\modules" ^
   --add-data="sysdoc\tickets;sysdoc\tickets" ^
+  --collect-all=prompt_toolkit ^
+  --collect-all=rich ^
+  --collect-all=google.generativeai ^
   --hidden-import=google.generativeai ^
   --hidden-import=prompt_toolkit ^
   --hidden-import=rich ^
@@ -55,15 +79,15 @@ python -m PyInstaller ^
   --hidden-import=sysdoc.modules.system_health ^
   --hidden-import=sysdoc.modules.updater ^
   --hidden-import=sysdoc.tickets.ticket_manager ^
-  --distpath=dist ^
-  --workpath=build ^
+  --distpath=%DIST% ^
+  --workpath=%BUILD% ^
   --specpath=. ^
   sysdoc\main.py
 
 if %ERRORLEVEL% EQU 0 (
     echo.
     echo [?] Build complete!
-    echo [?] Output: dist\Fixbot.exe
+    echo [?] Output: %DIST%\%EXE_NAME%.exe
     echo.
     echo Next step: Compile installer.iss with Inno Setup
 ) else (

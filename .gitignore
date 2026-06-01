@@ -7,8 +7,11 @@ reports/
 .idea/
 .vscode/
 .venv/
+.venv32/
 dist/
+dist32/
 build/
+build32/
 installer_output/
 *.spec
 *.egg-info/

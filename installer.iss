@@ -1,6 +1,6 @@
 ; Fixbot AI Windows Installer Script
-; Generated for: dineshxjarvis / fixbot-ai
-; Source repo: https://github.com/dineshxjarvis/fixbot-ai.git
+; Generated for: dineshkumarAS-creator / fixbot-ai
+; Source repo: https://github.com/dineshkumarAS-creator/fixbot-ai.git
 ; Compile this with Inno Setup: https://jrsoftware.org/isdl.php
 
 [Setup]
@@ -8,9 +8,9 @@ AppName=Fixbot
 AppVersion=4.0
 AppVerName=Fixbot AI v4.0
 AppPublisher=Fixbot AI
-AppPublisherURL=https://github.com/dineshxjarvis/fixbot-ai
-AppSupportURL=https://github.com/dineshxjarvis/fixbot-ai/issues
-AppUpdatesURL=https://github.com/dineshxjarvis/fixbot-ai/releases
+AppPublisherURL=https://github.com/dineshkumarAS-creator/fixbot-ai
+AppSupportURL=https://github.com/dineshkumarAS-creator/fixbot-ai/issues
+AppUpdatesURL=https://github.com/dineshkumarAS-creator/fixbot-ai/releases
 DefaultDirName={autopf}\Fixbot
 DefaultGroupName=Fixbot
 AllowNoIcons=yes

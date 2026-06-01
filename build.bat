@@ -4,17 +4,16 @@ REM This script uses PyInstaller to bundle sysdoc/main.py with all dependencies
 
 setlocal enabledelayedexpansion
 
-if /I "%~1"=="x86" (
-    set "VENV=.venv32"
-    set "EXE_NAME=Fixbot_x86"
-    set "DIST=dist32"
-    set "BUILD=build32"
-) else (
-    set "VENV=.venv"
-    set "EXE_NAME=Fixbot"
-    set "DIST=dist"
-    set "BUILD=build"
+if /I "%~1"=="x64" (
+    echo [!] Warning: This repository has been migrated to x86-only.
+    echo [!] Defaulting to 32-bit (x86) build targets...
+    echo.
 )
+
+set "VENV=.venv32"
+set "EXE_NAME=Fixbot_x86"
+set "DIST=dist32"
+set "BUILD=build32"
 
 REM Activate virtual environment
 if not exist "%VENV%\Scripts\activate.bat" (

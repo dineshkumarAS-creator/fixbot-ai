@@ -28,7 +28,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "Create a desktop shortcut"; GroupDescription: "Additional shortcuts:"; Flags: unchecked
 
 [Files]
-Source: "dist32\Fixbot_x86.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "dist32\Fixbot_x86.exe"; DestDir: "{app}"; DestName: "Fixbot.exe"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\Fixbot"; Filename: "{app}\Fixbot.exe"

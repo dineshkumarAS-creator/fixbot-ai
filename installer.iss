@@ -1,0 +1,40 @@
+; Fixbot AI Windows Installer Script
+; Generated for: dineshxjarvis / fixbot-ai
+; Source repo: https://github.com/dineshxjarvis/fixbot-ai.git
+; Compile this with Inno Setup: https://jrsoftware.org/isdl.php
+
+[Setup]
+AppName=Fixbot
+AppVersion=4.0
+AppVerName=Fixbot AI v4.0
+AppPublisher=Fixbot AI
+AppPublisherURL=https://github.com/dineshxjarvis/fixbot-ai
+AppSupportURL=https://github.com/dineshxjarvis/fixbot-ai/issues
+AppUpdatesURL=https://github.com/dineshxjarvis/fixbot-ai/releases
+DefaultDirName={autopf}\Fixbot
+DefaultGroupName=Fixbot
+AllowNoIcons=yes
+OutputDir=installer_output
+OutputBaseFilename=FixbotAI_Setup
+Compression=lzma
+SolidCompression=yes
+WizardStyle=modern
+PrivilegesRequired=admin
+ArchitecturesInstallIn64BitMode=x64
+
+[Languages]
+Name: "english"; MessagesFile: "compiler:Default.isl"
+
+[Tasks]
+Name: "desktopicon"; Description: "Create a desktop shortcut"; GroupDescription: "Additional shortcuts:"; Flags: unchecked
+
+[Files]
+Source: "dist\Fixbot.exe"; DestDir: "{app}"; Flags: ignoreversion
+
+[Icons]
+Name: "{group}\Fixbot"; Filename: "{app}\Fixbot.exe"
+Name: "{group}\Uninstall Fixbot"; Filename: "{uninstallexe}"
+Name: "{autodesktop}\Fixbot"; Filename: "{app}\Fixbot.exe"; Tasks: desktopicon
+
+[Run]
+Filename: "{app}\Fixbot.exe"; Description: "Launch Fixbot now"; Flags: nowait postinstall skipifsilent

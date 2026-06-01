@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: fixbot
+Version: 1.0.0
+Summary: AI-powered terminal system support bot
+Requires-Python: >=3.9
+Requires-Dist: google-generativeai>=0.5.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: prompt_toolkit>=3.0.43
+Requires-Dist: psutil>=5.9.8
+Requires-Dist: wmi>=1.5.1
+Requires-Dist: pywin32>=306
+Requires-Dist: winshell>=0.6

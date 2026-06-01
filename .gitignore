@@ -6,6 +6,9 @@ memory/
 reports/
 .idea/
 .vscode/
+.venv/
 dist/
 build/
+installer_output/
 *.spec
+*.egg-info/

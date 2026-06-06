@@ -1,11 +1,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/dineshkumarAS-creator/fixbot-v2/assets/banner.png" alt="Fixbot Banner" width="800px" style="max-width: 100%;">
 </p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0c4156d5-0f49-4d00-bdc7-8a05d62eca59" alt="FixBot Banner" width="900">
-</p>
-
-
 
 <h1 align="center">🤖 Fixbot v4.0</h1>
 
@@ -45,6 +40,9 @@ Modern operating system diagnostics are fragmented, frustrating, and prone to us
 ## 💡 The Solution: Fixbot v4.0
 
 Fixbot is an **autonomous support agent and interactive CLI** built for Windows. It couples raw system sensors and low-level kernel APIs with **Google Gemini 2.5 Flash**. 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0c4156d5-0f49-4d00-bdc7-8a05d62eca59" alt="FixBot Banner" width="100%">
+</p>
 
 Instead of searching static guides, Fixbot queries the live OS state—collecting latency pings, disk offsets, WMI CPU metrics, open browser handles, and memory consumption. It then proposes targeted, automated repair scripts, walks you through confirmation gates, applies the remedies safely, and verifies success immediately.
 

@@ -1,6 +1,11 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/dineshkumarAS-creator/fixbot-v2/assets/banner.png" alt="Fixbot Banner" width="800px" style="max-width: 100%;">
 </p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0c4156d5-0f49-4d00-bdc7-8a05d62eca59" alt="FixBot Banner" width="900">
+</p>
+
+
 
 <h1 align="center">🤖 Fixbot v4.0</h1>
 

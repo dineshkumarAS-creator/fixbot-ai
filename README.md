@@ -8,10 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/dineshkumarAS-creator/fixbot-v2/actions"><img src="https://img.shields.io/github/actions/workflow/status/dineshkumarAS-creator/fixbot-v2/ci.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&color=2ea44f" alt="Build Status"></a>
-  <a href="https://pypi.org/project/fixbot-v2/"><img src="https://img.shields.io/pypi/v/fixbot-v2?style=for-the-badge&logo=python&logoColor=white&color=007ec6" alt="PyPI Version"></a>
-  <a href="https://github.com/dineshkumarAS-creator/fixbot-v2/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dineshkumarAS-creator/fixbot-v2?style=for-the-badge&logo=open-source-initiative&logoColor=white&color=c33" alt="License"></a>
-  <a href="https://pepy.tech/project/fixbot-v2"><img src="https://img.shields.io/pypi/dm/fixbot-v2?style=for-the-badge&color=blueviolet" alt="Downloads"></a>
-  <a href="https://github.com/dineshkumarAS-creator/fixbot-v2/stargazers"><img src="https://img.shields.io/github/stars/dineshkumarAS-creator/fixbot-v2?style=for-the-badge&logo=github&color=ffca28" alt="GitHub Stars"></a>
+ 
 </p>
 
 

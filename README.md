@@ -6,10 +6,7 @@
   <strong>Autonomous Support Engineer & Real-Time Windows Diagnostics Agent</strong>
 </p>
 
-<p align="center">
-  <a href="https://github.com/dineshkumarAS-creator/fixbot-v2/actions"><img src="https://img.shields.io/github/actions/workflow/status/dineshkumarAS-creator/fixbot-v2/ci.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&color=2ea44f" alt="Build Status"></a>
- 
-</p>
+
 
 
 

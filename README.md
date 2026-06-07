@@ -14,14 +14,7 @@
   <a href="https://github.com/dineshkumarAS-creator/fixbot-v2/stargazers"><img src="https://img.shields.io/github/stars/dineshkumarAS-creator/fixbot-v2?style=for-the-badge&logo=github&color=ffca28" alt="GitHub Stars"></a>
 </p>
 
-<p align="center">
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-usage-examples">Usage Examples</a> •
-  <a href="#-technical-deep-dive">Technical Details</a> •
-  <a href="#-faq">FAQ</a>
-</p>
+
 
 ---
 
